@@ -1,8 +1,9 @@
 #include "hw09.h"
 
-void guessFace(Deck &passDeck){
+void Deck::guessFace(){
 
-	std::cout << "Guess Face";
-	passDeck.printDeck();
-	menu(passDeck);
+	shuffleDeck();
+
+	std::cout << "Guess the face";
+	menu();
 }

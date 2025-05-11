@@ -1,6 +1,6 @@
 #include "hw09.h"
 
-void menu(Deck &passDeck){
+void Deck::menu(){
 	
 	int selection = 0;
 
@@ -8,17 +8,21 @@ void menu(Deck &passDeck){
         std::cout << "1. Guess the face of the card\n";
         std::cout << "2. Guess the suit of the card\n";
         std::cout << "3. Guess both the face and suit\n";
-        std::cin >> selection;
+	std::cout << "4. End game\n";
+        std::cin >> selection;	
 
 	switch(selection) {
 		case 1:
-			guessFace(passDeck);
+			guessFace();
 			break;
 		case 2:
-			guessSuit(passDeck);
+			guessSuit();
 			break;
 		case 3:
 	//		guessBoth(passDeck);
+			break;
+		case 4:
+			return;
 			break;
 		default:
 			break;

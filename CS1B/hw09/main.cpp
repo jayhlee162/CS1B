@@ -2,6 +2,6 @@
 
 int main(){
 
-	Deck passDeck;
-	menu(passDeck);
+	Deck startDeck;
+	startDeck.menu();
 }

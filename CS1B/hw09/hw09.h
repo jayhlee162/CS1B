@@ -1,13 +1,17 @@
 #include <iostream>
 #include <algorithm>
 #include <vector>
-#include <random>
+#include <ctime>
 
 class Deck{
 	public:
 		void printDeck() const;
-
 		void shuffleDeck();
+		void guessFace();
+		void guessSuit();
+		void guessBoth();
+		void menu();
+		
 	private:
 	//spades, clubs, diamonds, hearts
 	std::vector <std::string> Cards = { "2H", "3H", "4H", "5H",
@@ -24,20 +28,3 @@ class Deck{
 					    "JD", "QD", "KD", "AS",
 					    "AC", "AD", "AH" };	    
 };
-
-void menu(Deck &passDeck);
-void guessFace(Deck &passDeck);
-void guessSuit(Deck &passDeck);
-void guessBoth();
-
-/*
-void Deck::shuffleDeck(){
-	std::default_random_engine random;
-	std::shuffle(Cards.begin(), Cards.end(), random);
-}
-
-void Deck::printDeck() const {
-	for (const std::string& card : Cards){
-		std::cout << card << " ";
-	}
-}*/
