@@ -19,7 +19,7 @@ void Deck::menu(){
 			guessSuit();
 			break;
 		case 3:
-	//		guessBoth(passDeck);
+			guessBoth();
 			break;
 		case 4:
 			return;

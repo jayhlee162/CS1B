@@ -11,9 +11,10 @@ void Deck::guessSuit(){
 	selectCard = Cards.front();
 	char suit = selectCard.back();
 
+	/* This tests for the answer
 	std::cout << "THIS CARD IS CHOSEN: " << selectCard << std::endl;
 	std::cout << "THIS IS THE SUIT: " << suit << std::endl;
-
+	*/
 	std::cout << "Guess the suit: ";
 	std::cin >> answer;
 
